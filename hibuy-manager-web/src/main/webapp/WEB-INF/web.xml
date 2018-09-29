@@ -9,4 +9,24 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <!-- 配置dispatcherServlet -->
+  <!-- url的拦截形式 -->
+  <!-- 加载springmvc.xml -->
+  
+  <!-- springmvc的前端控制器 -->
+	<servlet>
+		<servlet-name>hibuy-manager-web</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<!-- contextConfigLocation不是必须的， 如果不配置contextConfigLocation， springmvc的配置文件默认在：WEB-INF/servlet的name+"-servlet.xml" -->
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:spring/springmvc.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hibuy-manager-web</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+  
 </web-app>
