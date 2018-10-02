@@ -7,6 +7,12 @@
         <dependent-module archiveName="hibuy-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/hibuy-common/hibuy-common">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="hibuy-manager-interface-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/hibuy-manager-interface/hibuy-manager-interface">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibuy-manager-pojo-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/hibuy-manager-pojo/hibuy-manager-pojo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="hibuy-manager-web"/>
         <property name="java-output-path" value="/hibuy-manager-web/target/classes"/>
     </wb-module>
