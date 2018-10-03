@@ -29,4 +29,5 @@
 	<dubbo:application name="hibuy-manager-web"/>
 	<dubbo:registry protocol="zookeeper" address="192.168.25.128:2181"/>	
 	<dubbo:reference interface="com.hibuy.service.ItemService" id="itemService" />
+	<dubbo:reference interface="com.hibuy.service.ItemCatService" id="itemCatService" />
 </beans>      
